@@ -1,18 +1,20 @@
 {% extends 'rango/base.html' %}
 
-{% block title %}About{% endblock %}
-
 {% load staticfiles %}
 
-	
+{% block title %}About{% endblock %}
+
 	{% block body_block %}	
-		<h1>Terence Aqachmar says...</h1>
-		hello world! <strong>{{ boldmessage }}</strong><br />
+		<div class="page-header">
+		<h1>About</h1>
+		</div>
+		This is rango's about page 
+		<div>
+		<p></strong></p>
 		<a href="/rango/">Index</a><br />
 		
-        <h1>Including Static Media</h1>
         <img src="{% static "images/pythonmeme.jpg" %}" alt="Python Meme" /> <!-- Images -->
 
-		<p> visits: {{ visits }}</p>
+
 		
 {% endblock %}
