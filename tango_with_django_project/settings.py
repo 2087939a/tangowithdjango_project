@@ -53,6 +53,9 @@ ROOT_URLCONF = 'tango_with_django_project.urls'
 
 WSGI_APPLICATION = 'tango_with_django_project.wsgi.application'
 
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True 
+SESSION_COOKIE_AGE = 1209600 #cookie will expire after two weeks
+
 
 # Database
 # https://docs.djangoproject.com/en/1.7/ref/settings/#databases

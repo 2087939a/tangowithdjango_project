@@ -1,21 +1,18 @@
-<!DOCTYPE html>
-{% load static %}
+{% extends 'rango/base.html' %}
 
+{% block title %}About{% endblock %}
 
-<html>
+{% load staticfiles %}
+
 	
-	<head>
-		<title>Rango</title>
-	</head>
-	
-	<body>
+	{% block body_block %}	
 		<h1>Terence Aqachmar says...</h1>
 		hello world! <strong>{{ boldmessage }}</strong><br />
 		<a href="/rango/">Index</a><br />
 		
         <h1>Including Static Media</h1>
         <img src="{% static "images/pythonmeme.jpg" %}" alt="Python Meme" /> <!-- Images -->
-    
-	</body>
-	
-</html>
+
+		<p> visits: {{ visits }}</p>
+		
+{% endblock %}
