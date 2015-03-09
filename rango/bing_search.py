@@ -1,10 +1,9 @@
 import json
 import urllib, urllib2
-from rango.keys import BING_API_KEY
 
 # Add your BING_API_KEY
 
-
+BING_API_KEY = '0tsK9Le/+EIGiLm+K0htQFXJnfKemXt8biD3PiMhpBA'
 
 def run_query(search_terms):
     # Specify the base
