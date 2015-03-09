@@ -1,6 +1,6 @@
 import json
 import urllib, urllib2
-from keys import BING_API_KEY
+from rango.keys import BING_API_KEY
 
 # Add your BING_API_KEY
 
